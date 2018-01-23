@@ -5,25 +5,54 @@
 .welcome{
 	 background-color: #A8CD1B;
 	 padding: 15px;
+   overflow: hidden;
 
 }
-.welcome h2, .orderonline h2, .reservation h2{
+.welcome h2, .orderonline h2, .reservation h2, .menu h2{
 	font-family:Cookie-Regular;
 	text-align: center;
 }
-.orderonline p, .reservation p{
+.orderonline, .orderonline p, .reservation, .reservation p, .menu{
 	text-align: center;
 }
 .welcomeimg{
-	 transition: transform .2s ease;
+	 transition: transform .5s ease;
+   overflow: hidden;
 }
 .welcomeimg:hover{
 	-ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.5); 
+    overflow: hidden;
 }
-
-
+.small-border{
+  background-color: #a8cd1b;
+  height: 3px;
+  width: 100px;
+  display: inline-block;
+   margin-bottom: 15px;
+}
+/*.clearfix {
+    position: relative;
+    display: block;
+}*/
+.menu-restaurant{
+  border-bottom: 1px dotted #000;
+}
+.menu-title{
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+.menu-price{
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+}
+.menu-subtitle{
+  float: left;
+  font-size: 12px;
+}
 .view {
   
    margin: 10px;
@@ -341,8 +370,8 @@
   }
 }
 .pulse {
-  --color: #ff0000;
-  --hover: #ff0000;
+    --color: #a8cd1b;
+    --hover: #a8cd1b;
 }
 button {
   color: var(--color);
